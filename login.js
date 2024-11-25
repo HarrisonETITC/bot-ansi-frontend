@@ -1,5 +1,5 @@
 function login() {
-    const email = document.getElementById('Número').value;
+    const numero = document.getElementById('numero').value;
     const contrasena = document.getElementById('contrasena').value;
 
     fetch('http://localhost:3000/api/login', {
