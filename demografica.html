@@ -17,25 +17,15 @@
     <div class="card shadow-lg p-4" style="max-width: 500px; width: 100%; max-height: 90vh; overflow-y: auto;">
       <h2 class="text-center mb-4">Información Demográfica</h2>
       <form id="demograficaForm">
-        
-     
-        <div class="mb-3">
-          <label for="tipo_documento" class="form-label">Tipo de Documento:</label>
-          <input type="text" id="tipo_documento" name="tipo_documento" class="form-control" required>
-        </div>
-        
-        
         <div class="mb-3">
           <label for="primer_nombre" class="form-label">Primer Nombre:</label>
           <input type="text" id="primer_nombre" name="primer_nombre" class="form-control" required>
         </div>
-
        
         <div class="mb-3">
           <label for="segundo_nombre" class="form-label">Segundo Nombre:</label>
           <input type="text" id="segundo_nombre" name="segundo_nombre" class="form-control">
         </div>
-
       
         <div class="mb-3">
           <label for="primer_apellido" class="form-label">Primer Apellido:</label>
@@ -46,33 +36,51 @@
           <label for="segundo_apellido" class="form-label">Segundo Apellido:</label>
           <input type="text" id="segundo_apellido" name="segundo_apellido" class="form-control">
         </div>
-
       
         <div class="mb-3">
           <label for="email" class="form-label">Correo Electrónico:</label>
           <input type="email" id="email" name="email" class="form-control">
         </div>
-
      
         <div class="mb-3">
-          <label for="contraseña" class="form-label">Contraseña:</label>
-          <input type="password" id="contraseña" name="contraseña" class="form-control">
+          <label for="edad" class="form-label">Edad (En años):</label>
+          <input type="number" id="edad" name="edad" class="form-control" required>
         </div>
 
-      
         <div class="mb-3">
-          <label for="numero_celular" class="form-label">Número de Celular:</label>
-          <input type="number" id="numero_celular" name="numero_celular" class="form-control">
+          <label for="ocupacion" class="form-label">Ocupación:</label>
+          <input type="text" id="ocupacion" name="ocupacion" class="form-control">
         </div>
 
-       
+        <div class="mb-3">
+          <label for="ciudad" class="form-label">Ciudad:</label>
+          <input type="text" id="ciudad" name="ciudad" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="estado_civil" class="form-label">Estado civil:</label>
+          <input type="text" id="estado_civil" name="estado_civil" class="form-control">
+        </div>
+
+        <div class="mb-3">
+          <label for="etnia" class="form-label">Etnia:</label>
+          <input type="text" id="etnia" name="etnia" class="form-control">
+        </div>
         <button type="button" class="btn btn-primary w-100" onclick="guardarDemografica()">Guardar</button>
       </form>
     </div>
   </div>
 
+  <div class="card shadow-lg p-4 position-absolute" style="display: none">
+    <h3 class="mb-5">¿Desea ayudarnos completando un pequeño formulario? Este no le tomará mucho tiempo :)</h3>
+    <div class="d-flex gap-3">
+      <button type="button" class="btn btn-primary w-100 fw-bold fs-4" onclick="irDemografica()">De acuerdo!</button>
+      <button type="button" class="btn btn-danger w-100 fw-bold fs-4" onclick="irGracias()">Tal vez después</button>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="environment.js"></script>
   <script src="demografica.js"></script>
 </body>
 </html>
